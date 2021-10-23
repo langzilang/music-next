@@ -1,3 +1,5 @@
+const registerRouter = require ('./backed/router')
+
 module.exports = {
   lintOnSave: true,
   devServer:{
@@ -15,6 +17,11 @@ module.exports = {
       // @import "@/assets/scss/base.scss";
       // @import "@/assets/scss/reset.scss";
       // @import "@/assets/scss/icon.scss";
+    }
+  },
+  devServer: {
+    before (app) {
+      registerRouter (app)
     }
   }
 }
