@@ -1,9 +1,10 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'   //createWebHistory 和 createWebHashHistory
 import Home from '@/views/Home.vue'
 
 const routes = [
   {
     path: '/',
+    redirect:'/recommend',
     name: 'Home',
     component: Home
   },
