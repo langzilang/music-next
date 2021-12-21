@@ -1,4 +1,4 @@
-const registerRouter = require ('./backed/router')
+// const registerRouter = require ('./backed/router')
 
 module.exports = {
   lintOnSave: true,
@@ -19,9 +19,9 @@ module.exports = {
       // @import "@/assets/scss/icon.scss";
     }
   },
-  devServer: {
-    before (app) {
-      registerRouter (app)
-    }
-  }
+  // devServer: {
+  //   before (app) {
+  //     registerRouter (app)
+  //   }
+  // }
 }
