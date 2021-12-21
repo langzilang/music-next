@@ -1,4 +1,4 @@
-const registerRouter = require ('./backed/router')
+const registerRouter = require ('./backend/router')
 
 module.exports = {
   lintOnSave: true,
