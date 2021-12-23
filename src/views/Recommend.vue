@@ -1,6 +1,6 @@
 <template>
   <div class="home-body">
-    产品单页详情数据
+    推介页面
   </div>
   <!--<someComponent></someComponent>-->
 </template>
@@ -8,6 +8,7 @@
 <script>
 // import {  } from "@/api/createContrast.js";
 // import someComponent from './someComponent'
+import { getRecommend } from '@/service/recommend'
 // 推介页
 export default {
   name: 'Recommend',
@@ -20,8 +21,9 @@ export default {
   computed: {},
 
   watch: {},
-  created () {
-
+  async created () {
+    const result = await getRecommend()
+    console.log(result);
   },
 
   mounted () {
